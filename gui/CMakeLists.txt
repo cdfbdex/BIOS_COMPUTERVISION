@@ -1,8 +1,6 @@
 option(BUILD_GUI_TEST "Build GUI Test Examples" OFF)
 option(BUILD_MAINGUI_TEST "Build Main GUI" OFF)
 
-
-#set(CMAKE_PREFIX_PATH "C:\\Qt\\Qt5.5.0\\5.5\\msvc2013")
 if(BUILD_MAINGUI_TEST)
 	find_package(Qt5Widgets)
 	#set(CMAKE_AUTOMOC ON)
@@ -14,4 +12,12 @@ if(BUILD_MAINGUI_TEST)
 	add_executable(MainGUI main.cpp mainwindow.cpp ${MainGUI_MOC} ${MainGUI_UIS} mainwindow.rc)
 	qt5_use_modules(MainGUI Core Gui Widgets)
 	target_link_libraries(MainGUI ${QT_LIBRARIES})
+	
+	set_target_properties( MainGUI
+    PROPERTIES
+    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
+    LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+)
+	
 endif(BUILD_MAINGUI_TEST)

@@ -119,6 +119,89 @@ namespace biosmabe{
 	};
 
 #else
+		
+	Equ{
+		double m;
+		double c;
+		bool isVertical;
+		bool isHorizontal;
+	};
+
+
+	void foo(void);
+	double round(double number);
+	double degreeToRadian(double degree);
+	double radianToDegree(double radian);
+	Size rotationNewCanvasSize(double degree, double angle, double h);
+	double solveEquationY(Equ e, double x);
+	double solveEquationX(Equ e, double y);
+	map<string, int> rotationExtraMargins(Size &original, Size &newSize);
+	map<string, Point> getCorners(Size &original, map<string, int> &margins);
+	map<string, Point> getProjectedCorners(Size &s, double h, double degree, double angle);
+	Point getCentreBetweenPoints(Point &a, Point &b);
+	map<string, Point> getCentreBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections);
+	Equ getLinearEquation(Point &a, Point &b);
+	Equ getPerpendicular(Equ e, Point p);
+	map<string, Equ> getLinearEquationBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections);
+	map<string, Equ> getPerpendicularLinearEquation(map<string, Point> &originals, map<string, Point> &projections, map<string, Point> &centre);
+	Point getColisionPoint(Equ e1, Equ e2);
+	Mat rotateImage(Mat image, double degree);
+
+
+
+	class __declspec(dllimport) MabeSegmentation
+	{
+
+	public:
+		MabeSegmentation(Mat);
+		bool Tecnica1();
+		bool Tecnica2();
+		Mat getImagenSalida();
+		Mat getImagenEntrada();
+		~MabeSegmentation();
+	private:
+		Mat ImagenEntrada;
+		Mat ImagenSalida;
+	};
+
+	class __declspec(dllimport) MabeROIDetection
+	{
+
+	public:
+		MabeROIDetection(Mat);
+		bool Tecnica1();
+		bool Tecnica2();
+		Mat getImagenSalida();
+		Mat getImagenEntrada();
+		~MabeROIDetection();
+	private:
+		Mat ImagenEntrada;
+		Mat ImagenSalida;
+
+	};
+
+	class __declspec(dllimport) MabeFeatureComparison
+	{
+
+	public:
+		MabeFeatureComparison(Mat);
+		MabeFeatureComparison(Mat, Mat);
+		bool Tecnica1();
+		bool Tecnica2();
+		bool FlannMatcher();
+		Mat getImageMatches();
+		Mat getImagenSalida();
+		Mat getImagenEntrada();
+		~MabeFeatureComparison();
+	private:
+		Mat ImagenEntrada;
+		Mat ImagenSalida;
+
+		Mat Image_Matches;
+		std::vector<KeyPoint> keypoints_1, keypoints_2;
+		Mat Image_Matches1, Image_Matches2;
+		std::vector< DMatch > good_matches;
+	};
 
 
 #endif

@@ -1,29 +1,28 @@
 #include "biosmabe.h"
 #include <stdio.h>
+
 using namespace biosmabe;
 #ifndef M_PI
 #define M_PI 3.141592654
 #endif
 
-#if defined(WINENVIRONMENT32) || defined(WINENVIRONMENT64)
-
-__declspec(dllexport) void biosmabe::foo(void) {
+void biosmabe::foo(void) {
 	std::cout << "This is BIOSMABE Project" << std::endl;
 }
 
-__declspec(dllexport) double biosmabe::round(double number) {
+double biosmabe::round(double number) {
 	return number < 0.0 ? ceil(number - 0.5) : floor(number + 0.5);
 }
 
-__declspec(dllexport) double biosmabe::degreeToRadian(double degree) {
+double biosmabe::degreeToRadian(double degree) {
 	return (M_PI*degree) / 180.0;
 }
 
-__declspec(dllexport) double biosmabe::radianToDegree(double radian) {
+double biosmabe::radianToDegree(double radian) {
 	return (180 * radian) / M_PI;
 }
 
-__declspec(dllexport) Size biosmabe::rotationNewCanvasSize(double degree, double angle, double h) {
+Size biosmabe::rotationNewCanvasSize(double degree, double angle, double h) {
 	Size canvas(0, 0);
 	double radian = degreeToRadian(degree);
 	if ((degree >= 0 && degree <= 90) || (degree >= 181 && degree <= 270)) {
@@ -37,7 +36,7 @@ __declspec(dllexport) Size biosmabe::rotationNewCanvasSize(double degree, double
 	return canvas;
 }
 
-__declspec(dllexport) double biosmabe::solveEquationY(Equ e, double x) {
+double biosmabe::solveEquationY(Equ e, double x) {
 
 	cout << x << endl;
 
@@ -46,7 +45,7 @@ __declspec(dllexport) double biosmabe::solveEquationY(Equ e, double x) {
 	return e.m*x + e.c;
 }
 
-__declspec(dllexport) double biosmabe::solveEquationX(Equ e, double y) {
+double biosmabe::solveEquationX(Equ e, double y) {
 
 	if (e.isVertical) return e.c;
 	if (e.isHorizontal) return 0;
@@ -54,7 +53,7 @@ __declspec(dllexport) double biosmabe::solveEquationX(Equ e, double y) {
 	return (y - e.c) / e.m;
 }
 
-__declspec(dllexport) map<string, int> biosmabe::rotationExtraMargins(Size &original, Size &newSize) {
+map<string, int> biosmabe::rotationExtraMargins(Size &original, Size &newSize) {
 
 	map<string, int> m = map<string, int>();
 
@@ -79,7 +78,7 @@ __declspec(dllexport) map<string, int> biosmabe::rotationExtraMargins(Size &orig
 	return m;
 }
 
-__declspec(dllexport) map<string, Point> biosmabe::getCorners(Size &original, map<string, int> &margins) {
+map<string, Point> biosmabe::getCorners(Size &original, map<string, int> &margins) {
 	map<string, Point> m = map<string, Point>();
 
 	m["tl"] = Point(margins["left"], margins["top"]);
@@ -91,7 +90,7 @@ __declspec(dllexport) map<string, Point> biosmabe::getCorners(Size &original, ma
 
 }
 
-__declspec(dllexport) map<string, Point> biosmabe::getProjectedCorners(Size &s, double h, double degree, double angle) {
+map<string, Point> biosmabe::getProjectedCorners(Size &s, double h, double degree, double angle) {
 
 	map<string, Point> m = map<string, Point>();
 	double radian = degreeToRadian(degree);
@@ -140,7 +139,7 @@ __declspec(dllexport) map<string, Point> biosmabe::getProjectedCorners(Size &s, 
 
 }
 
-__declspec(dllexport) Point biosmabe::getCentreBetweenPoints(Point &a, Point &b) {
+Point biosmabe::getCentreBetweenPoints(Point &a, Point &b) {
 	Point c(0, 0);
 	double tmp;
 
@@ -157,7 +156,7 @@ __declspec(dllexport) Point biosmabe::getCentreBetweenPoints(Point &a, Point &b)
 	return c;
 }
 
-__declspec(dllexport) map<string, Point> biosmabe::getCentreBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections) {
+map<string, Point> biosmabe::getCentreBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections) {
 	map<string, Point> m = map<string, Point>();
 
 	m["tl"] = getCentreBetweenPoints(originals["tl"], projections["tl"]);
@@ -169,7 +168,7 @@ __declspec(dllexport) map<string, Point> biosmabe::getCentreBetweenOriginalsAndP
 
 }
 
-__declspec(dllexport) biosmabe::Equ biosmabe::getLinearEquation(Point &a, Point &b) {
+biosmabe::Equ biosmabe::getLinearEquation(Point &a, Point &b) {
 
 	Equ equation;
 
@@ -195,7 +194,7 @@ __declspec(dllexport) biosmabe::Equ biosmabe::getLinearEquation(Point &a, Point 
 
 }
 
-__declspec(dllexport) biosmabe::Equ biosmabe::getPerpendicular(Equ e, Point p) {
+biosmabe::Equ biosmabe::getPerpendicular(Equ e, Point p) {
 	Equ equation;
 
 	equation.isVertical = false;
@@ -220,7 +219,7 @@ __declspec(dllexport) biosmabe::Equ biosmabe::getPerpendicular(Equ e, Point p) {
 
 }
 
-__declspec(dllexport) map<string, biosmabe::Equ> biosmabe::getLinearEquationBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections) {
+map<string, biosmabe::Equ> biosmabe::getLinearEquationBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections) {
 	map<string, Equ> m = map<string, Equ>();
 
 	m["tl"] = getLinearEquation(originals["tl"], projections["tl"]);
@@ -231,7 +230,7 @@ __declspec(dllexport) map<string, biosmabe::Equ> biosmabe::getLinearEquationBetw
 	return m;
 }
 
-__declspec(dllexport) map<string, biosmabe::Equ> biosmabe::getPerpendicularLinearEquation(map<string, Point> &originals, map<string, Point> &projections, map<string, Point> &centre) {
+map<string, biosmabe::Equ> biosmabe::getPerpendicularLinearEquation(map<string, Point> &originals, map<string, Point> &projections, map<string, Point> &centre) {
 	map<string, Equ> m = map<string, Equ>();
 
 	m["tl"] = getPerpendicular(getLinearEquation(originals["tl"], projections["tl"]), centre["tl"]);
@@ -242,7 +241,7 @@ __declspec(dllexport) map<string, biosmabe::Equ> biosmabe::getPerpendicularLinea
 	return m;
 }
 
-__declspec(dllexport) Point biosmabe::getColisionPoint(Equ e1, Equ e2) {
+Point biosmabe::getColisionPoint(Equ e1, Equ e2) {
 
 	Point2d p = Point2d(0, 0);
 
@@ -292,7 +291,7 @@ __declspec(dllexport) Point biosmabe::getColisionPoint(Equ e1, Equ e2) {
 	return Point(round(p.x), round(p.y));
 }
 
-__declspec(dllexport) Mat biosmabe::rotateImage(Mat image, double degree)
+Mat biosmabe::rotateImage(Mat image, double degree)
 {
 
 	Mat copy, schema, rot_mat, dst;
@@ -482,6 +481,3 @@ Mat biosmabe::MabeFeatureComparison::getImageMatches(){
 }
 biosmabe::MabeFeatureComparison::~MabeFeatureComparison(){}
 //Fin Implmentación Clase MabeFeatureComparison
-#else
-
-#endif
