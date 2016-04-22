@@ -19,6 +19,12 @@
 #endif
 #endif
 
+#ifdef _WIN32 || _WIN64
+#  define EXPORTIT __declspec( dllexport )
+#else
+#  define EXPORTIT
+#endif
+
 #include <biosmabe/version.h>
 #include "opencv2/opencv.hpp"
 #include "opencv2/opencv_modules.hpp"
@@ -29,11 +35,7 @@
 #include <math.h>
 
 namespace biosmabe{ 
-#if defined(WINENVIRONMENT32) || defined(WINENVIRONMENT64)
-class __declspec(dllimport) BaseClass
-#else
-class BaseClass
-#endif
+class EXPORTIT BaseClass
 {
 private:
     int m_year;
