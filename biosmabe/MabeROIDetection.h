@@ -1,6 +1,5 @@
-// MODIFY pre-processor directive this class
-#ifndef BASECLASS_H
-#define BASECLASS_H
+#ifndef MABEROIDETECTION_H
+#define MABEROIDETECTION_H
 
 /// DO NOT MODIFY: Pre-processor directive to control export process between platforms WIN and GNU.
 #ifdef _WIN32 || _WIN64		// WIN export directive
@@ -10,30 +9,34 @@
 #endif
 
 /// External libraries
-#include <biosmabe/version.h>
+#include "opencv2/opencv.hpp"
+
+using namespace cv;
+using namespace std;
 
 // DO NOT MODIFY: Namespace for library
 namespace biosmabe{ 
 
-class EXPORTIT BaseClass
+class EXPORTIT MabeROIDetection
 {
 private:
 	/// Atributes
-    int m_year;
-    int m_month;
-    int m_day;
+    Mat ImagenEntrada;
+	Mat ImagenSalida;
  
 public:
 	/// Constructor and destructor
-    BaseClass(int year, int month, int day);
+	MabeROIDetection(Mat);
+	~MabeROIDetection();
  
 	/// Public methods
     void SetDate(int year, int month, int day);
  
-    int getYear();
-    int getMonth();
-    int getDay();
+    bool Tecnica1();
+	bool Tecnica2();
+	Mat getImagenSalida();
+	Mat getImagenEntrada();
 };
 
 }
-#endif // BASECLASS_H
+#endif // MABEROIDETECTION_H
