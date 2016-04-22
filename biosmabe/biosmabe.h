@@ -3,11 +3,11 @@
 
 // Check windows
 #if _WIN32 || _WIN64
-#if _WIN64
-#define WINENVIRONMENT64
-#else
-#define WINENVIRONMENT32
-#endif
+    #if _WIN64
+    #define WINENVIRONMENT64
+    #else
+    //#define WINENVIRONMENT32
+    #endif
 #endif
 
 // Check GCC
@@ -34,7 +34,7 @@ using namespace std;
 
 namespace biosmabe{
 #if defined(WINENVIRONMENT32) || defined(WINENVIRONMENT64)
-	
+
 	struct __declspec(dllimport) Equ{
 		double m;
 		double c;
@@ -119,8 +119,8 @@ namespace biosmabe{
 	};
 
 #else
-		
-	Equ{
+
+	struct Equ{
 		double m;
 		double c;
 		bool isVertical;
@@ -149,7 +149,7 @@ namespace biosmabe{
 
 
 
-	class __declspec(dllimport) MabeSegmentation
+	class MabeSegmentation
 	{
 
 	public:
@@ -164,7 +164,7 @@ namespace biosmabe{
 		Mat ImagenSalida;
 	};
 
-	class __declspec(dllimport) MabeROIDetection
+	class MabeROIDetection
 	{
 
 	public:
@@ -180,7 +180,7 @@ namespace biosmabe{
 
 	};
 
-	class __declspec(dllimport) MabeFeatureComparison
+	class MabeFeatureComparison
 	{
 
 	public:
