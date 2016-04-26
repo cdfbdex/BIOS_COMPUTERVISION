@@ -1,7 +1,7 @@
 #include "MabeSegmentation.h"
 
 //Implementación Clase MabeSegmentation
-biosmabe::MabeSegmentation::MabeSegmentation(Mat Imagen){
+biosmabe::MabeSegmentation::MabeSegmentation(cv::Mat Imagen){
 	ImagenEntrada = Imagen.clone();
 }
 
@@ -24,11 +24,11 @@ bool biosmabe::MabeSegmentation::Tecnica2(){
 	return true;
 }
 
-Mat biosmabe::MabeSegmentation::getImagenSalida(){
+cv::Mat biosmabe::MabeSegmentation::getImagenSalida(){
 	return ImagenSalida;
 }
 
-Mat biosmabe::MabeSegmentation::getImagenEntrada(){
+cv::Mat biosmabe::MabeSegmentation::getImagenEntrada(){
 	return ImagenEntrada;
 }
 

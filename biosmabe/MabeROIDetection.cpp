@@ -1,7 +1,7 @@
 #include "MabeROIDetection.h"
 
 //Implementación Clase MabeROIDetection
-biosmabe::MabeROIDetection::MabeROIDetection(Mat Imagen){
+biosmabe::MabeROIDetection::MabeROIDetection(cv::Mat Imagen){
 	ImagenEntrada = Imagen.clone();
 }
 
@@ -25,11 +25,11 @@ bool biosmabe::MabeROIDetection::Tecnica2(){
 	return true;
 }
 
-Mat biosmabe::MabeROIDetection::getImagenSalida(){
+cv::Mat biosmabe::MabeROIDetection::getImagenSalida(){
 	return ImagenSalida;
 }
 
-Mat biosmabe::MabeROIDetection::getImagenEntrada(){
+cv::Mat biosmabe::MabeROIDetection::getImagenEntrada(){
 	return ImagenEntrada;
 }
 

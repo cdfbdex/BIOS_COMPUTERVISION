@@ -11,7 +11,7 @@
 /// External libraries
 #include "opencv2/opencv.hpp"
 
-using namespace cv;
+//using namespace cv;
 using namespace std;
 
 // DO NOT MODIFY: Namespace for library
@@ -21,12 +21,12 @@ class EXPORTIT MabeROIDetection
 {
 private:
 	/// Atributes
-    Mat ImagenEntrada;
-	Mat ImagenSalida;
+    cv::Mat ImagenEntrada;
+	cv::Mat ImagenSalida;
  
 public:
 	/// Constructor and destructor
-	MabeROIDetection(Mat);
+	MabeROIDetection(cv::Mat);
 	~MabeROIDetection();
  
 	/// Public methods
@@ -34,8 +34,8 @@ public:
  
     bool Tecnica1();
 	bool Tecnica2();
-	Mat getImagenSalida();
-	Mat getImagenEntrada();
+	cv::Mat getImagenSalida();
+	cv::Mat getImagenEntrada();
 };
 
 }

@@ -1,7 +1,7 @@
 #include "MabeFeatureComparison.h"
 
 //Implementación Clase MabeFeatureComparison
-biosmabe::MabeFeatureComparison::MabeFeatureComparison(Mat Imagen){
+biosmabe::MabeFeatureComparison::MabeFeatureComparison(cv::Mat Imagen){
 	ImagenEntrada = Imagen.clone();
 }
 
@@ -10,7 +10,7 @@ biosmabe::MabeFeatureComparison::~MabeFeatureComparison()
 
 }
 
-biosmabe::MabeFeatureComparison::MabeFeatureComparison(Mat I1, Mat I2){
+biosmabe::MabeFeatureComparison::MabeFeatureComparison(cv::Mat I1, cv::Mat I2){
 	if (I1.channels() > 1 || I2.channels() > 1){
 		cvtColor(I1, Image_Matches1, CV_BGR2GRAY);
 		cvtColor(I2, Image_Matches2, CV_BGR2GRAY);
@@ -36,11 +36,11 @@ bool biosmabe::MabeFeatureComparison::Tecnica2(){
 	return true;
 }
 
-Mat biosmabe::MabeFeatureComparison::getImagenSalida(){
+cv::Mat biosmabe::MabeFeatureComparison::getImagenSalida(){
 	return ImagenSalida;
 }
 
-Mat biosmabe::MabeFeatureComparison::getImagenEntrada(){
+cv::Mat biosmabe::MabeFeatureComparison::getImagenEntrada(){
 	return ImagenEntrada;
 }
 
@@ -52,22 +52,22 @@ bool biosmabe::MabeFeatureComparison::FlannMatcher()
 	//-- Step 1: Detect the keypoints using SURF Detector
 	int minHessian = 10;
 
-	SurfFeatureDetector detector(minHessian);
+	cv::SurfFeatureDetector detector(minHessian);
 
 	detector.detect(Image_Matches1, keypoints_1);
 	detector.detect(Image_Matches2, keypoints_2);
 
 	//-- Step 2: Calculate descriptors (feature vectors)
-	SurfDescriptorExtractor extractor;
+	cv::SurfDescriptorExtractor extractor;
 
-	Mat descriptors_1, descriptors_2;
+	cv::Mat descriptors_1, descriptors_2;
 
 	extractor.compute(Image_Matches1, keypoints_1, descriptors_1);
 	extractor.compute(Image_Matches2, keypoints_2, descriptors_2);
 
 	//-- Step 3: Matching descriptor vectors using FLANN matcher
-	FlannBasedMatcher matcher;
-	std::vector< DMatch > matches;
+	cv::FlannBasedMatcher matcher;
+	std::vector< cv::DMatch > matches;
 	matcher.match(descriptors_1, descriptors_2, matches);
 
 	double max_dist = 0.6; double min_dist = 0.001;
@@ -86,12 +86,12 @@ bool biosmabe::MabeFeatureComparison::FlannMatcher()
 	return true;
 }
 
-Mat biosmabe::MabeFeatureComparison::getImageMatches(){
+cv::Mat biosmabe::MabeFeatureComparison::getImageMatches(){
 	//-- Draw only "good" matches
-	Mat img_matches;
+	cv::Mat img_matches;
 	drawMatches(Image_Matches1, keypoints_1, Image_Matches2, keypoints_2,
-		good_matches, Image_Matches, Scalar::all(-1), Scalar::all(-1),
-		vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
+		good_matches, Image_Matches, cv::Scalar::all(-1), cv::Scalar::all(-1),
+		vector<char>(), cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
 
 	for (int i = 0; i < (int)good_matches.size(); i++)
 	{

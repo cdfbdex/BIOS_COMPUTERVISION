@@ -21,7 +21,7 @@
 //#include <map>
 //#include <math.h>
 
-using namespace cv;
+//using namespace cv;
 using namespace std;
 
 // DO NOT MODIFY: Namespace for library
@@ -38,20 +38,20 @@ namespace biosmabe{
 	EXPORTIT double round(double number);
 	EXPORTIT double degreeToRadian(double degree);
 	EXPORTIT double radianToDegree(double radian);
-	EXPORTIT Size rotationNewCanvasSize(double degree, double angle, double h);
+	EXPORTIT cv::Size rotationNewCanvasSize(double degree, double angle, double h);
 	EXPORTIT double solveEquationY(Equ e, double x);
 	EXPORTIT double solveEquationX(Equ e, double y);
-	EXPORTIT map<string, int> rotationExtraMargins(Size &original, Size &newSize);
-	EXPORTIT map<string, Point> getCorners(Size &original, map<string, int> &margins);
-	EXPORTIT map<string, Point> getProjectedCorners(Size &s, double h, double degree, double angle);
-	EXPORTIT Point getCentreBetweenPoints(Point &a, Point &b);
-	EXPORTIT map<string, Point> getCentreBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections);
-	EXPORTIT Equ getLinearEquation(Point &a, Point &b);
-	EXPORTIT Equ getPerpendicular(Equ e, Point p);
-	EXPORTIT map<string, Equ> getLinearEquationBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections);
-	EXPORTIT map<string, Equ> getPerpendicularLinearEquation(map<string, Point> &originals, map<string, Point> &projections, map<string, Point> &centre);
-	EXPORTIT Point getColisionPoint(Equ e1, Equ e2);
-	EXPORTIT Mat rotateImage(Mat image, double degree);
+	EXPORTIT map<string, int> rotationExtraMargins(cv::Size &original, cv::Size &newSize);
+	EXPORTIT map<string, cv::Point> getCorners(cv::Size &original, map<string, int> &margins);
+	EXPORTIT map<string, cv::Point> getProjectedCorners(cv::Size &s, double h, double degree, double angle);
+	EXPORTIT cv::Point getCentreBetweenPoints(cv::Point &a, cv::Point &b);
+	EXPORTIT map<string, cv::Point> getCentreBetweenOriginalsAndProjections(map<string, cv::Point> &originals, map<string, cv::Point> &projections);
+	EXPORTIT Equ getLinearEquation(cv::Point &a, cv::Point &b);
+	EXPORTIT Equ getPerpendicular(Equ e, cv::Point p);
+	EXPORTIT map<string, Equ> getLinearEquationBetweenOriginalsAndProjections(map<string, cv::Point> &originals, map<string, cv::Point> &projections);
+	EXPORTIT map<string, Equ> getPerpendicularLinearEquation(map<string, cv::Point> &originals, map<string, cv::Point> &projections, map<string, cv::Point> &centre);
+	EXPORTIT cv::Point getColisionPoint(Equ e1, Equ e2);
+	EXPORTIT cv::Mat rotateImage(cv::Mat image, double degree);
 
 }
 #endif // UTILS_H

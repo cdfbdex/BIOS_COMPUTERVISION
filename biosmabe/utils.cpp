@@ -16,8 +16,8 @@ double biosmabe::radianToDegree(double radian) {
 	return (180 * radian) / M_PI;
 }
 
-Size biosmabe::rotationNewCanvasSize(double degree, double angle, double h) {
-	Size canvas(0, 0);
+cv::Size biosmabe::rotationNewCanvasSize(double degree, double angle, double h) {
+	cv::Size canvas(0, 0);
 	double radian = degreeToRadian(degree);
 	if ((degree >= 0 && degree <= 90) || (degree >= 181 && degree <= 270)) {
 		canvas.height = round((h*fabs(sin(angle + radian))) * 2);
@@ -47,7 +47,7 @@ double biosmabe::solveEquationX(Equ e, double y) {
 	return (y - e.c) / e.m;
 }
 
-map<string, int> biosmabe::rotationExtraMargins(Size &original, Size &newSize) {
+map<string, int> biosmabe::rotationExtraMargins(cv::Size &original, cv::Size &newSize) {
 
 	map<string, int> m = map<string, int>();
 
@@ -72,46 +72,46 @@ map<string, int> biosmabe::rotationExtraMargins(Size &original, Size &newSize) {
 	return m;
 }
 
-map<string, Point> biosmabe::getCorners(Size &original, map<string, int> &margins) {
-	map<string, Point> m = map<string, Point>();
+map<string, cv::Point> biosmabe::getCorners(cv::Size &original, map<string, int> &margins) {
+	map<string, cv::Point> m = map<string, cv::Point>();
 
-	m["tl"] = Point(margins["left"], margins["top"]);
-	m["tr"] = Point(margins["left"] + original.width, margins["top"]);
-	m["bl"] = Point(margins["left"], margins["top"] + original.height);
-	m["br"] = Point(margins["left"] + original.width, margins["top"] + original.height);
+	m["tl"] = cv::Point(margins["left"], margins["top"]);
+	m["tr"] = cv::Point(margins["left"] + original.width, margins["top"]);
+	m["bl"] = cv::Point(margins["left"], margins["top"] + original.height);
+	m["br"] = cv::Point(margins["left"] + original.width, margins["top"] + original.height);
 
 	return m;
 
 }
 
-map<string, Point> biosmabe::getProjectedCorners(Size &s, double h, double degree, double angle) {
+map<string, cv::Point> biosmabe::getProjectedCorners(cv::Size &s, double h, double degree, double angle) {
 
-	map<string, Point> m = map<string, Point>();
+	map<string, cv::Point> m = map<string, cv::Point>();
 	double radian = degreeToRadian(degree);
 	int top, left;
 
-	m["tl"] = Point(
+	m["tl"] = cv::Point(
 		round(s.width / 2.0 + h*cos(M_PI - angle + radian)),
 		round(s.height / 2.0 - h*sin(M_PI - angle + radian)));
 
 	top = m["tl"].y;
 	left = m["tl"].x;
 
-	m["tr"] = Point(
+	m["tr"] = cv::Point(
 		round(s.width / 2.0 + h*cos(angle + radian)),
 		round(s.height / 2.0 - h*sin(angle + radian)));
 
 	if (top > m["tr"].y) top = m["tr"].y;
 	if (left > m["tr"].x) left = m["tr"].x;
 
-	m["br"] = Point(
+	m["br"] = cv::Point(
 		round(s.width / 2.0 + h*cos(-angle + radian)),
 		round(s.height / 2.0 - h*sin(-angle + radian)));
 
 	if (top > m["br"].y) top = m["br"].y;
 	if (left > m["br"].x) left = m["br"].x;
 
-	m["bl"] = Point(
+	m["bl"] = cv::Point(
 		round(s.width / 2.0 + h*cos(M_PI + angle + radian)),
 		round(s.height / 2.0 - h*sin(M_PI + angle + radian)));
 
@@ -131,8 +131,8 @@ map<string, Point> biosmabe::getProjectedCorners(Size &s, double h, double degre
 	return m;
 }
 
-Point biosmabe::getCentreBetweenPoints(Point &a, Point &b) {
-	Point c(0, 0);
+cv::Point biosmabe::getCentreBetweenPoints(cv::Point &a, cv::Point &b) {
+	cv::Point c(0, 0);
 	double tmp;
 
 	tmp = abs(a.x - b.x) / 2.0;
@@ -148,8 +148,8 @@ Point biosmabe::getCentreBetweenPoints(Point &a, Point &b) {
 	return c;
 }
 
-map<string, Point> biosmabe::getCentreBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections) {
-	map<string, Point> m = map<string, Point>();
+map<string, cv::Point> biosmabe::getCentreBetweenOriginalsAndProjections(map<string, cv::Point> &originals, map<string, cv::Point> &projections) {
+	map<string, cv::Point> m = map<string, cv::Point>();
 
 	m["tl"] = getCentreBetweenPoints(originals["tl"], projections["tl"]);
 	m["tr"] = getCentreBetweenPoints(originals["tr"], projections["tr"]);
@@ -160,7 +160,7 @@ map<string, Point> biosmabe::getCentreBetweenOriginalsAndProjections(map<string,
 
 }
 
-biosmabe::Equ biosmabe::getLinearEquation(Point &a, Point &b) {
+biosmabe::Equ biosmabe::getLinearEquation(cv::Point &a, cv::Point &b) {
 
 	Equ equation;
 
@@ -186,7 +186,7 @@ biosmabe::Equ biosmabe::getLinearEquation(Point &a, Point &b) {
 
 }
 
-biosmabe::Equ biosmabe::getPerpendicular(Equ e, Point p) {
+biosmabe::Equ biosmabe::getPerpendicular(Equ e, cv::Point p) {
 	Equ equation;
 
 	equation.isVertical = false;
@@ -211,7 +211,7 @@ biosmabe::Equ biosmabe::getPerpendicular(Equ e, Point p) {
 
 }
 
-map<string, biosmabe::Equ> biosmabe::getLinearEquationBetweenOriginalsAndProjections(map<string, Point> &originals, map<string, Point> &projections) {
+map<string, biosmabe::Equ> biosmabe::getLinearEquationBetweenOriginalsAndProjections(map<string, cv::Point> &originals, map<string, cv::Point> &projections) {
 	map<string, Equ> m = map<string, Equ>();
 
 	m["tl"] = getLinearEquation(originals["tl"], projections["tl"]);
@@ -222,7 +222,7 @@ map<string, biosmabe::Equ> biosmabe::getLinearEquationBetweenOriginalsAndProject
 	return m;
 }
 
-map<string, biosmabe::Equ> biosmabe::getPerpendicularLinearEquation(map<string, Point> &originals, map<string, Point> &projections, map<string, Point> &centre) {
+map<string, biosmabe::Equ> biosmabe::getPerpendicularLinearEquation(map<string, cv::Point> &originals, map<string, cv::Point> &projections, map<string, cv::Point> &centre) {
 	map<string, Equ> m = map<string, Equ>();
 
 	m["tl"] = getPerpendicular(getLinearEquation(originals["tl"], projections["tl"]), centre["tl"]);
@@ -233,9 +233,9 @@ map<string, biosmabe::Equ> biosmabe::getPerpendicularLinearEquation(map<string, 
 	return m;
 }
 
-Point biosmabe::getColisionPoint(Equ e1, Equ e2) {
+cv::Point biosmabe::getColisionPoint(Equ e1, Equ e2) {
 
-	Point2d p = Point2d(0, 0);
+	cv::Point2d p = cv::Point2d(0, 0);
 
 	if (e1.isHorizontal && e2.isVertical) {
 
@@ -280,31 +280,31 @@ Point biosmabe::getColisionPoint(Equ e1, Equ e2) {
 
 	}
 
-	return Point(round(p.x), round(p.y));
+	return cv::Point(round(p.x), round(p.y));
 }
 
-Mat biosmabe::rotateImage(Mat image, double degree)
+cv::Mat biosmabe::rotateImage(cv::Mat image, double degree)
 {
 
-	Mat copy, schema, rot_mat, dst;
+	cv::Mat copy, schema, rot_mat, dst;
 	map<string, int> margins;
-	Size img, canvas, workspace;
+	cv::Size img, canvas, workspace;
 	double h, angle;
-	map<string, Point> original, projection, centre;
+	map<string, cv::Point> original, projection, centre;
 	map<string, Equ> pEqu;
-	Point2f src_centre;
+	cv::Point2f src_centre;
 	int speed = 30;
 	int type = 0;
 
-	img = Size(image.cols, image.rows);
+	img = cv::Size(image.cols, image.rows);
 	h = sqrt(pow(img.width / 2.0, 2) + pow(img.height / 2.0, 2));
 	angle = atan((double)img.height / img.width);
 
 	canvas = rotationNewCanvasSize(degree, angle, h);
 	margins = rotationExtraMargins(img, canvas);
-	copyMakeBorder(image, copy, margins["top"], margins["bottom"], margins["left"], margins["right"], BORDER_CONSTANT, Scalar(0, 0, 0));
+	copyMakeBorder(image, copy, margins["top"], margins["bottom"], margins["left"], margins["right"], cv::BORDER_CONSTANT, cv::Scalar(0, 0, 0));
 	copy.copyTo(schema);
-	workspace = Size(copy.cols, copy.rows);
+	workspace = cv::Size(copy.cols, copy.rows);
 
 	original = getCorners(img, margins);
 	projection = getProjectedCorners(canvas, h, degree, angle);
@@ -312,11 +312,11 @@ Mat biosmabe::rotateImage(Mat image, double degree)
 	pEqu = getPerpendicularLinearEquation(original, projection, centre);
 
 	if (img.width > canvas.width || img.height > canvas.height) {
-		Point p = getColisionPoint(pEqu["tl"], pEqu["tr"]);
-		src_centre = Point2f(p.x, p.y);
+		cv::Point p = getColisionPoint(pEqu["tl"], pEqu["tr"]);
+		src_centre = cv::Point2f(p.x, p.y);
 	}
 	else {
-		src_centre = Point2f(canvas.width / 2.0, canvas.height / 2.0);
+		src_centre = cv::Point2f(canvas.width / 2.0, canvas.height / 2.0);
 	}
 
 	if (type == 0) {

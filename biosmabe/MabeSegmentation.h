@@ -11,7 +11,7 @@
 /// External libraries
 #include "opencv2/opencv.hpp"
 
-using namespace cv;
+//using namespace cv;
 using namespace std;
 
 // DO NOT MODIFY: Namespace for library
@@ -22,19 +22,19 @@ namespace biosmabe{
 
 	private:
 		/// Atributes
-		Mat ImagenEntrada;
-		Mat ImagenSalida;
+		cv::Mat ImagenEntrada;
+		cv::Mat ImagenSalida;
  
 	public:
 		/// Constructor and destructor
-		MabeSegmentation(Mat);
+		MabeSegmentation(cv::Mat);
 		~MabeSegmentation();
 
 		/// Public methods
 		bool Tecnica1();
 		bool Tecnica2();
-		Mat getImagenSalida();
-		Mat getImagenEntrada();
+		cv::Mat getImagenSalida();
+		cv::Mat getImagenEntrada();
 		
 	};
 

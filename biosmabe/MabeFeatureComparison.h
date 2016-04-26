@@ -12,7 +12,7 @@
 #include "opencv2/opencv.hpp"
 #include "opencv2/nonfree/features2d.hpp"
 
-using namespace cv;
+//using namespace cv;
 using namespace std;
 
 // DO NOT MODIFY: Namespace for library
@@ -24,27 +24,27 @@ class EXPORTIT MabeFeatureComparison
 
 public:
 	/// Constructor and destructor
-	MabeFeatureComparison(Mat);
-	MabeFeatureComparison(Mat, Mat);
+	MabeFeatureComparison(cv::Mat);
+	MabeFeatureComparison(cv::Mat, cv::Mat);
 	~MabeFeatureComparison();
 
 	/// Public methods
 	bool Tecnica1();
 	bool Tecnica2();
 	bool FlannMatcher();
-	Mat getImageMatches();
-	Mat getImagenSalida();
-	Mat getImagenEntrada();
+	cv::Mat getImageMatches();
+	cv::Mat getImagenSalida();
+	cv::Mat getImagenEntrada();
 	
 private:
 	/// Atributes
-	Mat ImagenEntrada;
-	Mat ImagenSalida;
+	cv::Mat ImagenEntrada;
+	cv::Mat ImagenSalida;
 
-	Mat Image_Matches;
-	std::vector<KeyPoint> keypoints_1, keypoints_2;
-	Mat Image_Matches1, Image_Matches2;
-	std::vector< DMatch > good_matches;
+	cv::Mat Image_Matches;
+	std::vector<cv::KeyPoint> keypoints_1, keypoints_2;
+	cv::Mat Image_Matches1, Image_Matches2;
+	std::vector< cv::DMatch > good_matches;
 };
 
 }
