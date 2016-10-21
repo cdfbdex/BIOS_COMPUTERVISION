@@ -1,0 +1,21 @@
+TUTO: https://wiki.qt.io/How_to_create_a_multi_language_application
+
+En consola, en el directorio donde se encuentra el .pro, ejecutar:
+	>> lupdate -pro GUI_SIV.pro
+Esto genera el índice de archivos que deben traducirse en toda la aplicación.
+	
+
+Traducir cada palabra usando el Google Translate Toolkit:
+https://github.com/JPNaude/dev_notes/wiki/Using-Google-Translate-to-translate-your-Qt-application
+En el directorio donde se ubican los .ts
+	>> lconvert mabeSIV_en.ts -o mabeSIV_en.po
+	>> lconvert mabeSIV_pt.ts -o mabeSIV_pt.po
+	
+Se convierten los .po en Google Translate Toolkit, se verifica cada palabra y se descargan.
+Luego se convierten nuevamente a formato .ts:
+	>> lconvert mabeSIV_en.po -o mabeSIV_en.ts
+	>> lconvert mabeSIV_pt.po -o mabeSIV_pt.ts
+
+Finalmente se generan los archivos release con el comando:
+	>> lrelease mabeSIV_en.ts
+	>> lrelease mabeSIV_pt.ts

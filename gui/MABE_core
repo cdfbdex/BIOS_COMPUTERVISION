@@ -1,0 +1,10 @@
+#ifndef MABE_CORE_H
+#define MABE_CORE_H
+
+#include "src/constants.h"
+#include "src/appControllers/apicontroller.h"
+#include "src/appControllers/jsoncontroller.h"
+#include "src/appControllers/mvc/mysortfilterproxymodel.h"
+#include "src/appControllers/eventloggercontroller.h"
+
+#endif // MABE_CORE_H

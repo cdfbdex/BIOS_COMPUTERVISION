@@ -1,0 +1,901 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Language: pt_BR\n"
+"X-Qt-Contexts: true\n"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/agregarroi.ui:14
+msgctxt "AgregarROI|"
+msgid "Agregar Región de Interés"
+msgstr "Add Region of Interest"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/agregarroi.ui:51
+msgctxt "AgregarROI|"
+msgid "CODE"
+msgstr "Code:"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/agregarroi.ui:84
+msgctxt "AgregarROI|"
+msgid "Código"
+msgstr "Code"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/agregarroi.ui:94
+msgctxt "AgregarROI|"
+msgid "Descripción"
+msgstr "Description"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/agregarroi.ui:119
+msgctxt "AgregarROI|"
+msgid "Buscar:"
+msgstr "Search:"
+
+#~ msgctxt "EntrenadorModelos|"
+#~ msgid "MainWindow"
+#~ msgstr "MainWindow"
+
+#: ../../src/m2_entrenadorModelos/entrenamientomodelos.ui:14
+msgctxt "EntrenamientoModelos|"
+msgid "Form"
+msgstr "Form"
+
+#: ../../src/m2_entrenadorModelos/entrenamientomodelos.ui:26
+msgctxt "EntrenamientoModelos|"
+msgid "Entrenamiento"
+msgstr "Training"
+
+#: ../../src/m2_entrenadorModelos/entrenamientomodelos.ui:39
+msgctxt "EntrenamientoModelos|"
+msgid "Cerrar"
+msgstr "Close"
+
+#: ../../src/appControllers/eventloggercontroller.cpp:52
+#, fuzzy
+msgctxt "EventLoggerController|"
+msgid "Error de red"
+msgstr "Network error"
+
+#: ../../src/appControllers/eventloggercontroller.cpp:52
+msgctxt "EventLoggerController|"
+msgid "Error al conectar con el servidor:\n"
+msgstr "Error connecting to server: \n"
+
+#~ msgctxt "InspeccionVisual|"
+#~ msgid "MainWindow"
+#~ msgstr "MainWindow"
+
+#: ../../src/m3_inspectorVisual/inspeccionvisual.ui:14
+msgctxt "InspeccionVisual|"
+msgid "Form"
+msgstr "Form"
+
+#: ../../src/m3_inspectorVisual/inspeccionvisual.ui:26
+msgctxt "InspeccionVisual|"
+msgid "Cerrar"
+msgstr "Close"
+
+#~ msgctxt "LoginWindow|"
+#~ msgid "MainWindow"
+#~ msgstr "MainWindow"
+
+#: ../../src/loginwindow/loginwindow.ui:265
+msgctxt "LoginWindow|"
+msgid "Usuario:"
+msgstr "User:"
+
+#: ../../src/loginwindow/loginwindow.ui:214
+msgctxt "LoginWindow|"
+msgid "Contraseña:"
+msgstr "Password:"
+
+#: ../../src/loginwindow/loginwindow.ui:17
+msgctxt "LoginWindow|"
+msgid "Usuarios"
+msgstr "Users"
+
+#: ../../src/loginwindow/loginwindow.ui:143
+msgctxt "LoginWindow|"
+msgid "Ingrese solo caracteres numéricos"
+msgstr "Enter only numeric characters"
+
+#: ../../src/loginwindow/loginwindow.ui:158
+#: ../../src/loginwindow/loginwindow.ui:277
+msgctxt "LoginWindow|"
+msgid "1053825924"
+msgstr "1053825924"
+
+#: ../../src/loginwindow/loginwindow.ui:336
+msgctxt "LoginWindow|"
+msgid "Sistema de Inspección Visual para Control de Calidad"
+msgstr "Visual Inspection System for Quality Control"
+
+#: ../../src/loginwindow/loginwindow.ui:353
+msgctxt "LoginWindow|"
+msgid "Enviar"
+msgstr "Submit"
+
+#~ msgctxt "LoginWindow|"
+#~ msgid "Ingresar"
+#~ msgstr "Sign in"
+
+#: ../../src/loginwindow/loginwindow.ui:368
+msgctxt "LoginWindow|"
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: ../../src/loginwindow/loginwindow.cpp:82
+#: ../../src/loginwindow/loginwindow.cpp:115
+msgctxt "LoginWindow|"
+msgid "Error en las credenciales"
+msgstr "Credentials error"
+
+#: ../../src/loginwindow/loginwindow.cpp:83
+msgctxt "LoginWindow|"
+msgid "No puede iniciar sesión, por favor verifique usuario y contraseña."
+msgstr "You can not log in, please check username and password."
+
+#: ../../src/loginwindow/loginwindow.cpp:116
+msgctxt "LoginWindow|"
+msgid "No puede cerrar sesión, por favor verifique usuario y contraseña."
+msgstr "You can not log out, please check username and password."
+
+#: ../../src/loginwindow/loginwindow.cpp:170
+msgctxt "LoginWindow|"
+msgid "Error al conectar con el servidor:\n"
+msgstr "Error connecting to server: \n"
+
+#~ msgctxt "LoginWindow|"
+#~ msgid "Error en las credenciales, por favor verifica usuario y contraseña."
+#~ msgstr "Error credentials, please check your username and password."
+
+#: ../../src/loginwindow/loginwindow.cpp:170
+msgctxt "LoginWindow|"
+msgid "Error de red"
+msgstr "Network error"
+
+#~ msgctxt "LoginWindow|"
+#~ msgid "Error al conectar con el servidor: "
+#~ msgstr "Failed to connect to server: "
+
+#~ msgctxt "MaestroReferencias|"
+#~ msgid "MainWindow"
+#~ msgstr "MainWindow"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:14
+msgctxt "MaestroReferencias|"
+msgid "Form"
+msgstr "Form"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:170
+msgctxt "MaestroReferencias|"
+msgid "Actualizar tabla"
+msgstr "Refresh table"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:150
+msgctxt "MaestroReferencias|"
+msgid "Cerrar"
+msgstr "Close"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:32
+msgctxt "MaestroReferencias|"
+msgid "Palabras clave:"
+msgstr "Keywords:"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:39
+msgctxt "MaestroReferencias|"
+msgid "Categoría:"
+msgstr "Category:"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:46
+msgctxt "MaestroReferencias|"
+msgid "Filtrar por fecha"
+msgstr "Filter by Date"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:70
+msgctxt "MaestroReferencias|"
+msgid "Fecha inicial:"
+msgstr "Initial date:"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:77
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:108
+msgctxt "MaestroReferencias|"
+msgid "yyyy-MM-dd hh:mm:ss"
+msgstr "yyyy-MM-dd hh:mm:ss"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:87
+msgctxt "MaestroReferencias|"
+msgid "Fecha final:"
+msgstr "End Date"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:130
+msgctxt "MaestroReferencias|"
+msgid "Filtrar"
+msgstr "Filter"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:140
+msgctxt "MaestroReferencias|"
+msgid "Case sensitive"
+msgstr "Case sensitive"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.ui:177
+msgctxt "MaestroReferencias|"
+msgid "Registrar nueva referencia"
+msgstr "Register new reference"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.cpp:65
+msgctxt "MaestroReferencias|"
+msgid "Id."
+msgstr "Id."
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.cpp:65
+msgctxt "MaestroReferencias|"
+msgid "Fecha/Hora"
+msgstr "Date/Time"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.cpp:65
+msgctxt "MaestroReferencias|"
+msgid "Referencia"
+msgstr "Reference"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.cpp:65
+msgctxt "MaestroReferencias|"
+msgid "Línea"
+msgstr "Line"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.cpp:65
+msgctxt "MaestroReferencias|"
+msgid "Activa"
+msgstr "Active"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.cpp:167
+msgctxt "MaestroReferencias|"
+msgid "Error de red"
+msgstr "Network error"
+
+#: ../../src/m1_maestroReferencias/maestroreferencias.cpp:167
+msgctxt "MaestroReferencias|"
+msgid "Error al conectar con el servidor: "
+msgstr "Failed to connect to server: "
+
+#~ msgctxt "MainMenu|"
+#~ msgid "MainWindow"
+#~ msgstr "MainWindow"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Ayuda"
+#~ msgstr "Help"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Maestro de referencias"
+#~ msgstr "Master of references"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Entrenador Modelos"
+#~ msgstr "Models Trainer"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Inspector Visual"
+#~ msgstr "Visual inspector"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Iniciar sesión"
+#~ msgstr "Log in"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Cambiar Idioma"
+#~ msgstr "Change language"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Español"
+#~ msgstr "Spanish"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Cambiar idioma"
+#~ msgstr "Change language"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Acerca de"
+#~ msgstr "About"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "¿Seguro que desea salir?"
+#~ msgstr "Are you sure you want to quit?"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Salir"
+#~ msgstr "Exit"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "¿Está seguro que desea cerrar la aplicación?"
+#~ msgstr "Are you sure you want to close the application?"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Sí"
+#~ msgstr "Yes"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Cancelar"
+#~ msgstr "Cancel"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Selecciona un idioma"
+#~ msgstr "Choose a language"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Información"
+#~ msgstr "Information"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Se ha cambiado el idioma a Español"
+#~ msgstr "Language has been changed to Spanish"
+
+#~ msgctxt "MainMenu|"
+#~ msgid "Se ha cambiado el idioma a "
+#~ msgstr "Language changed to "
+
+#~ msgctxt "MainMenu|"
+#~ msgid "No se ha podido cambiar el idioma."
+#~ msgstr "Could not change the language."
+
+#, fuzzy
+#~ msgctxt "MainWindow|"
+#~ msgid "MainWindow"
+#~ msgstr "MainWindow"
+
+#: ../../src/mainwindow.ui:14
+#, fuzzy
+msgctxt "MainWindow|"
+msgid "Sistema de Inspección Visual para Control de Calidad"
+msgstr "Visual Inspection System for Quality Control"
+
+#: ../../src/mainwindow.ui:43
+#, fuzzy
+msgctxt "MainWindow|"
+msgid "Usuario:"
+msgstr "User:"
+
+#: ../../src/mainwindow.ui:55
+msgctxt "MainWindow|"
+msgid "user"
+msgstr "user"
+
+#: ../../src/mainwindow.ui:68 ../../src/mainwindow.cpp:355
+msgctxt "MainWindow|"
+msgid "Cerrar sesión"
+msgstr "Logout"
+
+#: ../../src/mainwindow.ui:125
+msgctxt "MainWindow|"
+msgid "Gestor del Maestro de Referencias"
+msgstr "Master Reference Manager"
+
+#: ../../src/mainwindow.ui:149
+msgctxt "MainWindow|"
+msgid "Configuración de Modelos de Inspección Visual"
+msgstr "Configuring Visual Inspection Models"
+
+#: ../../src/mainwindow.ui:173
+msgctxt "MainWindow|"
+msgid "Inspección Visual de Producto"
+msgstr "Product Visual Inspection"
+
+#: ../../src/mainwindow.ui:199
+msgctxt "MainWindow|"
+msgid "A&yuda"
+msgstr "&Help"
+
+#: ../../src/mainwindow.ui:206
+msgctxt "MainWindow|"
+msgid "&Archivo"
+msgstr "&Archive"
+
+#: ../../src/mainwindow.ui:215
+msgctxt "MainWindow|"
+msgid "&Módulos"
+msgstr "&Modules"
+
+#: ../../src/mainwindow.ui:223
+msgctxt "MainWindow|"
+msgid "&Configuración"
+msgstr "&Setup"
+
+#: ../../src/mainwindow.ui:237
+msgctxt "MainWindow|"
+msgid "toolBar"
+msgstr "toolBar"
+
+#: ../../src/mainwindow.ui:263
+msgctxt "MainWindow|"
+msgid "&Iniciar sesión"
+msgstr "&Log in"
+
+#: ../../src/mainwindow.ui:273
+msgctxt "MainWindow|"
+msgid "&Cerrar sesión"
+msgstr "Lo&g out"
+
+#: ../../src/mainwindow.ui:283
+msgctxt "MainWindow|"
+msgid "&Salir"
+msgstr "&Exit"
+
+#: ../../src/mainwindow.ui:293
+msgctxt "MainWindow|"
+msgid "&Cambiar idioma"
+msgstr "&Change language"
+
+#: ../../src/mainwindow.ui:303
+msgctxt "MainWindow|"
+msgid "&Acerca de..."
+msgstr "&About..."
+
+#: ../../src/mainwindow.ui:313
+msgctxt "MainWindow|"
+msgid "&1. Maestro de referencias"
+msgstr "&1. Master of references"
+
+#: ../../src/mainwindow.ui:323
+msgctxt "MainWindow|"
+msgid "&2. Entrenamiento de Modelo de Inspección Visual"
+msgstr "&2. Visual Inspection Model's Trainer"
+
+#: ../../src/mainwindow.ui:333
+msgctxt "MainWindow|"
+msgid "&3. Inspección Visual de Producto"
+msgstr "&3. Product's Visual Inspection"
+
+#: ../../src/mainwindow.ui:343
+msgctxt "MainWindow|"
+msgid "Sistema"
+msgstr "System"
+
+#: ../../src/mainwindow.ui:353
+msgctxt "MainWindow|"
+msgid "Log de Eventos"
+msgstr "Event Log"
+
+#, fuzzy
+#~ msgctxt "MainWindow|"
+#~ msgid "Salir"
+#~ msgstr "Exit"
+
+#, fuzzy
+#~ msgctxt "MainWindow|"
+#~ msgid "¿Está seguro que desea cerrar la aplicación?"
+#~ msgstr "Are you sure you want to close the application?"
+
+#, fuzzy
+#~ msgctxt "MainWindow|"
+#~ msgid "Sí"
+#~ msgstr "Yes"
+
+#, fuzzy
+#~ msgctxt "MainWindow|"
+#~ msgid "No"
+#~ msgstr "No"
+
+#, fuzzy
+#~ msgctxt "MainWindow|"
+#~ msgid "Cancelar"
+#~ msgstr "Cancel"
+
+#: ../../src/mainwindow.cpp:153 ../../src/mainwindow.cpp:160
+#, fuzzy
+msgctxt "MainWindow|"
+msgid "Información"
+msgstr "Information"
+
+#: ../../src/mainwindow.cpp:153
+msgctxt "MainWindow|"
+msgid ""
+"No se ha podido cargar el archivo del idioma seleccionado. Se cambiará a "
+"Español"
+msgstr "Unable to apply the selected language. Spanish language will be set."
+
+#: ../../src/mainwindow.cpp:160
+msgctxt "MainWindow|"
+msgid "No se puede instalar el idioma"
+msgstr "You can not install the language"
+
+#: ../../src/mainwindow.cpp:252
+msgctxt "MainWindow|"
+msgid "Abriendo Configuración del sistema"
+msgstr "Opening System Configuration"
+
+#: ../../src/mainwindow.cpp:257
+msgctxt "MainWindow|"
+msgid "Abriendo Log de Eventos"
+msgstr "Opening Event Log"
+
+#: ../../src/mainwindow.cpp:268
+#, fuzzy
+msgctxt "MainWindow|"
+msgid "Cambiar idioma"
+msgstr "Change language"
+
+#: ../../src/mainwindow.cpp:269
+#, fuzzy
+msgctxt "MainWindow|"
+msgid "Selecciona un idioma"
+msgstr "Choose a language"
+
+#: ../../src/mainwindow.cpp:287
+msgctxt "MainWindow|"
+msgid "Acerca de..."
+msgstr "About..."
+
+#: ../../src/mainwindow.cpp:287
+msgctxt "MainWindow|"
+msgid "Proyecto MABE-BIOS"
+msgstr "MABE-BIOS project"
+
+#: ../../src/mainwindow.cpp:252 ../../src/mainwindow.cpp:257
+#: ../../src/mainwindow.cpp:304 ../../src/mainwindow.cpp:316
+msgctxt "MainWindow|"
+msgid "Abrir módulo"
+msgstr "Open module"
+
+#: ../../src/mainwindow.cpp:355
+msgctxt "MainWindow|"
+msgid "Ha cerrado sesión correctamente"
+msgstr "Logged out correctly"
+
+#~ msgctxt "MainWindow|"
+#~ msgid "Abriendo maestro de referencias"
+#~ msgstr "Opening master references"
+
+#: ../../src/mainwindow.cpp:304
+msgctxt "MainWindow|"
+msgid "Abriendo entrenador de modelos de inspección visual"
+msgstr "Opening trainer of visual inspection models"
+
+#: ../../src/mainwindow.cpp:316
+msgctxt "MainWindow|"
+msgid "Abriendo inspector visual de producto"
+msgstr "Opening Product Visual Inspector"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/seleccionarroi.cpp:171
+msgctxt "QObject|"
+msgid "Save File"
+msgstr "Save File"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/seleccionarroi.cpp:173
+msgctxt "QObject|"
+msgid "Images (*.jpg)"
+msgstr "Images (* .jpg)"
+
+#: ../../src/appControllers/mvc/referenciaundrefrigeracion.cpp:6
+msgctxt "ReferenciaUndRefrigeracion|"
+msgid "ID"
+msgstr "ID"
+
+#: ../../src/appControllers/mvc/referenciaundrefrigeracion.cpp:6
+msgctxt "ReferenciaUndRefrigeracion|"
+msgid "Fecha/Hora"
+msgstr "Date/Time"
+
+#: ../../src/appControllers/mvc/referenciaundrefrigeracion.cpp:6
+msgctxt "ReferenciaUndRefrigeracion|"
+msgid "Referencia"
+msgstr "Reference"
+
+#: ../../src/appControllers/mvc/referenciaundrefrigeracion.cpp:6
+msgctxt "ReferenciaUndRefrigeracion|"
+msgid "Activada"
+msgstr "Enabled"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:23
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Registrar nuevo modelo de referencia"
+msgstr "Register new reference model"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:30
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Asignar código de referencia"
+msgstr "Assign reference code"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:71
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:655
+msgctxt "RegistrarNuevaReferencia|"
+msgid "MA0400ZNCX"
+msgstr "MA0400ZNCX"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:81
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:638
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Referencia:"
+msgstr "Reference:"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:94
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Analizar referencia"
+msgstr "Analyze reference"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:114
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Analizar referencia: PENDIENTE"
+msgstr "Analyze reference: PENDING"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:125
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:327
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Capturar imágenes"
+msgstr "Capture images"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:145
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:539
+msgctxt "RegistrarNuevaReferencia|"
+msgid "PuertaSup"
+msgstr "PuertaSup"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:170
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:220
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:514
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:589
+msgctxt "RegistrarNuevaReferencia|"
+msgid "FrontalInf"
+msgstr "FrontalInf"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:195
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:564
+msgctxt "RegistrarNuevaReferencia|"
+msgid "FrontalSup"
+msgstr "FrontalSup"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:246
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:413
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Frontal Superior"
+msgstr "Superior front"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:269
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:418
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Frontal Inferior"
+msgstr "Lower front"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:292
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:423
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Puerta Superior"
+msgstr "Superior door"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:315
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:428
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Puerta Inferior"
+msgstr "Lower door"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:345
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Captura de imágenes: PENDIENTE"
+msgstr "Image capture: PENDING"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:356
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Seleccionar Regiones de Interés (ROI)"
+msgstr "Select Regions of interest (ROI)"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:388
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Eliminar"
+msgstr "Remove"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:395
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Limpiar"
+msgstr "Clean"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:447
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Resumen de registro de referencia"
+msgstr "Summary of reference record"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:453
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Resumen de ROI"
+msgstr "Summary ROI"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:481
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"Las regiones de interés (ROI) seleccionadas para la referencia a registrar "
+"se detallan a continuación con su información principal"
+msgstr "Regions of interest (ROI) selected for reference to register listed below with their main information"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:491
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Resumen de imágenes"
+msgstr "Summary of images"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:610
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"Las imágenes a color adquiridas para procesar la referencia son las "
+"mostradas a continuación:"
+msgstr "Color images acquired for processing the reference are shown below:"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:620
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Guardar local"
+msgstr "Save Local"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:682
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Detalles de guardado"
+msgstr "Details saved"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.ui:692
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Enviar a FIS"
+msgstr "Send to FIS"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:55
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Imagen"
+msgstr "Image"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:55
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Código Accesorio"
+msgstr "Accessory code"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:55
+msgctxt "RegistrarNuevaReferencia|"
+msgid "X"
+msgstr "X"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:55
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Y"
+msgstr "Y"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:55
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Ancho"
+msgstr "Width"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:55
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Alto"
+msgstr "Height"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:112
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:122
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:133
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Registro de nueva referencia"
+msgstr "Register new reference"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:112
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"Debe analizar la referencia para continuar el proceso de registro de "
+"referencia."
+msgstr "You should analyze the reference to continue the reference registration process."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:122
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"Debe capturar las imágenes para continuar el proceso de registro de "
+"referencia."
+msgstr "You should capture images to continue the reference registration process."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:133
+msgctxt "RegistrarNuevaReferencia|"
+msgid "No ha seleccionado regiones de interés en las imágenes."
+msgstr "You have not selected regions of interest in images."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:144
+msgctxt "RegistrarNuevaReferencia|"
+msgid "¿Está seguro que desea salir sin grabar la información?"
+msgstr "Are you sure you want to exit without saving the information?"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:187
+#, fuzzy
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Error de red"
+msgstr "Network error"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:187
+#, fuzzy
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Error al conectar con el servidor: "
+msgstr "Failed to connect to server: "
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:237
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Analizar referencia: OK"
+msgstr "Analyze reference: OK"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:300
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Captura imágenes: OK"
+msgstr "Capturing: OK"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:329
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:343
+msgctxt "RegistrarNuevaReferencia|"
+msgid "No se puede agregar el ROI"
+msgstr "You can not add the ROI"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:330
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"No se puede agregar un accesorio vacío. Por favor verifique si realizó el "
+"análisis de la referencia en el paso 1."
+msgstr "You can not add an empty accessory. Please check if you performed the analysis of the reference in step 1."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:344
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"El accesorio que está intentando agregar ya existe en la imagen "
+"especificada. Por favor verifique nuevamente el código."
+msgstr "The attachment you are trying to add already exists in the specified image. Please check the code again."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:369
+msgctxt "RegistrarNuevaReferencia|"
+msgid "¿Está seguro que desea eliminar la fila seleccionada?"
+msgstr "Are you sure you want to delete the selected row?"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:390
+msgctxt "RegistrarNuevaReferencia|"
+msgid "¿Está seguro que desea eliminar todas las filas?"
+msgstr "Are you sure you want to delete all the rows?"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:448
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Guardando imagen "
+msgstr "Saving image "
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:509
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Guardando regiones de interés en JSON."
+msgstr "Saving regions of interest in JSON."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:519
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Guardado."
+msgstr "Saved"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:522
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:526
+#, fuzzy
+msgctxt "RegistrarNuevaReferencia|"
+msgid "Información"
+msgstr "Information"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:522
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"La grabación de imágenes y regiones de interés ha finalizado exitosamente."
+msgstr "Recording images and regions of interest has been successfully completed."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/registrarnuevareferencia.cpp:526
+msgctxt "RegistrarNuevaReferencia|"
+msgid ""
+"No se pueden guardar las imágenes porque no se han capturado las cuatro "
+"imágenes de la referencia a registrar."
+msgstr "You can not save images because the four reference images have not been captured."
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/seleccionarroi.cpp:11
+msgctxt "SeleccionarROI|"
+msgid "Agregar ROI"
+msgstr "Add ROI"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/seleccionarroi.cpp:12
+msgctxt "SeleccionarROI|"
+msgid "Guardar"
+msgstr "Save"
+
+#: ../../src/m1_maestroReferencias/agregarreferencias/seleccionarroi.ui:14
+msgctxt "Widget|"
+msgid "Widget"
+msgstr "Widget"
+

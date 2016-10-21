@@ -1,11 +1,16 @@
+#include "src/mainwindow.h"
+
 #include <QApplication>
-#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    QCoreApplication::setOrganizationName("MABE");
+    QCoreApplication::setApplicationName("SIV");
+    QCoreApplication::setOrganizationDomain("http://www.mabe.com.co/");
 
-    return a.exec();
+    QApplication app(argc, argv);
+    MainWindow w;
+
+    w.showMaximized();
+    return app.exec();
 }
